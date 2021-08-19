@@ -1,17 +1,17 @@
-var React = require('react');
+let React = require('react');
 
-var StarRater = React.createClass({
+let StarRater = React.createClass({
     render: function() {
-        var stars = [];
-        for (var i=0; i<5; i++) {
-            var className;
+        let stars = [];
+        for (let i=0; i<5; i++) {
+            let className;
             if (i < this.props.rating || 0) {
                 className = 'fa fa-star';
             }
             else {
                 className = 'fa fa-star-o';
             }
-            var star = (
+            let star = (
                 <i className={className} key={i}
                    onClick={this.props.onChange.bind(null, i + 1)}>
                 </i>

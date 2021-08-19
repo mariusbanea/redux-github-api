@@ -1,11 +1,11 @@
 require('babel-polyfill');
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Provider = require('react-redux').Provider;
+let React = require('react');
+let ReactDOM = require('react-dom');
+let Provider = require('react-redux').Provider;
 
-var store = require('./store');
-var RepositoryList = require('./components/repository-list');
+let store = require('./store');
+let RepositoryList = require('./components/repository-list');
 
 document.addEventListener('DOMContentLoaded', function() {
     ReactDOM.render(

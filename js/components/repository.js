@@ -1,12 +1,12 @@
-var React = require('react');
+let React = require('react');
 
-var connect = require('react-redux').connect;
+let connect = require('react-redux').connect;
 
-var StarRater = require('./star-rater');
+let StarRater = require('./star-rater');
 
-var actions = require('../actions/index');
+let actions = require('../actions/index');
 
-var Repository = React.createClass({
+let Repository = React.createClass({
     componentDidMount: function() {
         this.props.dispatch(
             actions.fetchDescription(this.props.repository.name)
@@ -33,6 +33,6 @@ var Repository = React.createClass({
 
 module.exports = Repository;
 
-var Container = connect()(Repository);
+let Container = connect()(Repository);
 
 module.exports = Container;
