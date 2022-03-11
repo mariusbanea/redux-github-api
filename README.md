@@ -1,5 +1,3 @@
-# thinkful-redux-github-api
-
 # Redux data flow
 > Component => Actions => Reducer => Store
 
